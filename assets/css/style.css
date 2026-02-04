@@ -306,8 +306,8 @@ h6,
 
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 60px;
+  right: 35px;
 }
 
 .navbar-mobile ul {
@@ -318,22 +318,30 @@ h6,
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: rgba(31, 53, 72, 0.9);
   overflow-y: auto;
   transition: 0.3s;
+  border-radius: 16px;
 }
 
 .navbar-mobile a,
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #75B43C;
+  color: #ffffff;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #02602B;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 20px;
+
+  /* Underline
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px; */
 }
 
 .navbar-mobile .getstarted,
