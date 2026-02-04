@@ -1490,3 +1490,72 @@ section {
 #footer .credits a {
   color: #02602B;
 }
+
+/* ==========================================
+   MOBILE HEADER + LOGO RESPONSIVE FIX
+   ========================================== */
+
+@media (max-width: 768px) {
+
+  /* Header height */
+  #header {
+    height: 40px !important;
+    min-height: 40px !important;
+    padding: 0 !important;
+  }
+
+  /* Header container alignment */
+  #header .container,
+  #header .container-fluid {
+    height: 100%;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between;
+  }
+
+  /* Logo image size */
+  #header .logo img {
+    max-height: 20px !important;
+    width: auto;
+  }
+
+  /* Logo text (if used instead of image) */
+  #header .logo h1 {
+    font-size: 16px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: 40px;
+  }
+
+  /* Navbar toggle button position */
+  .mobile-nav-toggle {
+    font-size: 22px !important;
+    line-height: 1 !important;
+    margin-top: 0 !important;
+  }
+
+  /* Align navbar toggle vertically */
+  #header .mobile-nav-toggle {
+    display: flex !important;
+    align-items: center;
+    height: 40px;
+  }
+
+  /* Fix hero section height for mobile */
+  #hero,
+  #hero .carousel-item {
+    height: calc(100vh - 40px) !important;
+  }
+
+  /* Fix scroll offset */
+  .scrolled-offset {
+    margin-top: 40px !important;
+  }
+
+  /* Reduce topbar height if visible */
+  #topbar {
+    height: 30px;
+    font-size: 12px;
+  }
+
+}
