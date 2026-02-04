@@ -1499,8 +1499,8 @@ section {
 
   /* Header height */
   #header {
-    height: 40px !important;
-    min-height: 40px !important;
+    height: 50px !important;
+    min-height: 50px !important;
     padding: 0 !important;
   }
 
@@ -1515,7 +1515,7 @@ section {
 
   /* Logo image size */
   #header .logo img {
-    max-height: 20px !important;
+    max-height: 45px !important; /* fits inside 50px */
     width: auto;
   }
 
@@ -1524,37 +1524,37 @@ section {
     font-size: 16px !important;
     padding: 0 !important;
     margin: 0 !important;
-    line-height: 40px;
+    line-height: 50px; /* same as header */
   }
 
-  /* Navbar toggle button position */
+  /* Navbar toggle button */
   .mobile-nav-toggle {
     font-size: 22px !important;
     line-height: 1 !important;
-    margin-top: 0 !important;
+    margin: 0 !important;
   }
 
   /* Align navbar toggle vertically */
   #header .mobile-nav-toggle {
     display: flex !important;
     align-items: center;
-    height: 40px;
+    height: 50px;
   }
 
-  /* Fix hero section height for mobile */
+  /* Fix hero section height */
   #hero,
   #hero .carousel-item {
-    height: calc(100vh - 40px) !important;
+    height: calc(100vh - 50px) !important;
   }
 
   /* Fix scroll offset */
   .scrolled-offset {
-    margin-top: 40px !important;
+    margin-top: 50px !important;
   }
 
-  /* Reduce topbar height if visible */
+  /* Topbar mobile */
   #topbar {
-    height: 30px;
+    height: 40px;
     font-size: 12px;
   }
 
